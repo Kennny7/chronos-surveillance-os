@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="tacticalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff80" />
+      <stop offset="50%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#005533" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121820" />
+      <stop offset="100%" stop-color="#080b0f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="256" height="256" rx="36" fill="url(#bgGrad)" stroke="#1a2e22" stroke-width="4"/>
+
+  <!-- Grid Lines -->
+  <line x1="32" y1="128" x2="224" y2="128" stroke="#172e21" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <line x1="128" y1="32" x2="128" y2="224" stroke="#172e21" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Radar Concentric Rings -->
+  <circle cx="128" cy="128" r="92" fill="none" stroke="#1f422e" stroke-width="2"/>
+  <circle cx="128" cy="128" r="64" fill="none" stroke="#25583b" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="128" cy="128" r="36" fill="none" stroke="#00ff80" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="128" cy="128" r="8" fill="#00ff80"/>
+
+  <!-- Targeting Reticle Corner Brackets -->
+  <path d="M 52 76 L 52 52 L 76 52" fill="none" stroke="#00ff80" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 204 76 L 204 52 L 180 52" fill="none" stroke="#00ff80" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 52 180 L 52 204 L 76 204" fill="none" stroke="#00ff80" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 204 180 L 204 204 L 180 204" fill="none" stroke="#00ff80" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Scanning Sweep Beam -->
+  <polygon points="128,128 200,75 220,105" fill="url(#tacticalGrad)" opacity="0.25"/>
+
+  <!-- Center Crosshairs -->
+  <line x1="104" y1="128" x2="120" y2="128" stroke="#00ff80" stroke-width="2.5"/>
+  <line x1="136" y1="128" x2="152" y2="128" stroke="#00ff80" stroke-width="2.5"/>
+  <line x1="128" y1="104" x2="128" y2="120" stroke="#00ff80" stroke-width="2.5"/>
+  <line x1="128" y1="136" x2="128" y2="152" stroke="#00ff80" stroke-width="2.5"/>
+
+  <!-- Status Telemetry Marks -->
+  <circle cx="178" cy="88" r="4" fill="#00e5ff"/>
+  <rect x="186" y="84" width="28" height="8" rx="2" fill="#00e5ff" opacity="0.4"/>
+</svg>
